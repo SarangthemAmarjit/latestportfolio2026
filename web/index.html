@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Sarangthem Amarjit Meetei — Flutter Developer & Software Engineer Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amarjit Portfolio">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sarangthem Amarjit Meetei — Flutter Developer">
+  <meta property="og:description" content="Flutter Developer & Software Engineer from Manipur. Building elegant mobile & web solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amarjit.web.app">
+  <title>Sarangthem Amarjit Meetei — Flutter Developer</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0A0E1A;
+    }
+    #loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #0A0E1A;
+      color: #54C5F8;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .loader-logo {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+      letter-spacing: -0.03em;
+    }
+    .loader-logo span { color: #54C5F8; }
+    .loader-dots {
+      display: flex; gap: 8px;
+    }
+    .loader-dots div {
+      width: 8px; height: 8px;
+      background: #027DFD;
+      border-radius: 50%;
+      animation: bounce 1.4s ease infinite;
+    }
+    .loader-dots div:nth-child(2) { animation-delay: 0.2s; background: #54C5F8; }
+    .loader-dots div:nth-child(3) { animation-delay: 0.4s; background: #00B4AB; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <div class="loader-logo">S.<span>Amarjit</span>.dev</div>
+    <div class="loader-dots">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var loader = document.getElementById('loading'); if (loader) { loader.remove(); }
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
